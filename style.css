@@ -10,13 +10,30 @@
 div{
     align-items: center;
 }
-body{
-    background: url("https://itchronicles.com/wp-content/uploads/2020/11/where-is-ai-used.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    overflow: hidden;
-}
+ body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://itchronicles.com/wp-content/uploads/2020/11/where-is-ai-used.jpg'); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+    }
+
+    /* For tablets */
+    @media (max-width: 1024px) and (min-width: 768px) {
+      body {
+        background-position: top;
+      }
+    }
+
+    /* For phones */
+    @media (max-width: 767px) {
+      body {
+        background-size: contain;
+        background-position: center top;
+      }
+    }
 .wrapper{
     display: flex;
     justify-content: center;
