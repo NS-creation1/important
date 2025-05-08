@@ -8,9 +8,30 @@
     --thumbBG: #90a4ae;
   }
   
-  body {
-    background:  url("https://img.freepik.com/free-vector/abstract-blue-technology-background_23-2149352058.jpg?size=626&ext=jpg&ga=GA1.1.1222169770.1701993600&semt=ais");
-  }
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://img.freepik.com/free-vector/abstract-blue-technology-background_23-2149352058.jpg?size=626&ext=jpg&ga=GA1.1.1222169770.1701993600&semt=ais'); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+    }
+
+    /* For tablets */
+    @media (max-width: 1024px) and (min-width: 768px) {
+      body {
+        background-position: top;
+      }
+    }
+
+    /* For phones */
+    @media (max-width: 767px) {
+      body {
+        background-size: contain;
+        background-position: center top;
+      }
+    }
   body .card {
     height: 45vw;
     width: 35vw;
